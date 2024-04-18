@@ -1,0 +1,40 @@
+<%# 
+    Developer Name: Lalit Mishra
+    Developer ID:   24DEV018
+    Date:           18-March-2024
+
+    Description:    This file contains Work Experience section.
+%>
+
+
+
+<div class="container">
+    <div class="work">
+        <h3>Work Experience</h3>
+
+        <div class="work-control" id="work-control">
+            <input type="button" value="Add Work Experience" onclick="addWorkRow()">
+            <input type="button" value="Remove" onclick="remWork()">
+        </div>
+
+        <div class="work-row " id="work-row">
+            <div id="work-row-0">
+                <label for="company">Company Name: </label>
+                <input type="text" name="comp-0" id="handle-17-0" onfocus="activeWorkField(0)">
+                <label for="w-desg">Designation: </label>
+                <input type="text" name="w-desg-0" id="handle-18-0" disabled>
+                <label for="from">From: </label>
+                <input type="date" name="from-0" id="handle-19-0" disabled>
+                <label for="to">To: </label>
+                <input type="date" name="to-0" id="handle-20-0" disabled>
+            </div>
+        </div>
+
+        <div class="bottom-buttons">
+            <input type="button" value="Back" onclick="hideWork(); showEdu()">
+            <input type="button" id="saveBasic" value="Preview and Save">
+            <input type="button" id="nextBasic"  style="background-color: #CCC; color: black;" value="Next" onclick="hideWork(); showTechLang()">
+        </div>
+
+    </div>
+</div>

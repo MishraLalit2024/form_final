@@ -1,0 +1,146 @@
+/*
+    Developer Name: Lalit Mishra
+    Developer ID:   24DEV018
+    Date:           18-March-2024
+*/
+
+
+body{
+    background-color: #CCC;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    padding: 1px 26px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    width: 96%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1px 26px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+textarea{
+    resize: none;
+}
+
+
+/* Common classes for common fields*/
+.flexer{
+    display: flex;
+    justify-content: space-around;
+}
+.flexer > *{
+    width: calc(100%/3);
+}
+.padNorm{
+    padding: 8px 0;
+}
+
+
+/* style for the sections in the form */
+.basic, .education, .work, .tech-lang, .reference, .preference{
+    background-color: bisque;
+    padding: 16px;
+    border: 2px solid brown;
+    border-radius: 16px;
+    width: 60%;
+    margin: 0 auto;
+}
+.basic h3{
+    padding: 0;
+    margin: 0 0 10px 0 ;
+}
+.basic > *{
+    padding: 3px 0;
+}
+.msg{
+    color: brown;
+}
+.education > *{
+    padding: 3px 0;
+}
+.edu-control, .work-control, .ref-control{
+    margin-bottom: 36px;
+}
+.edu-row > *{
+    padding: 4px 0;
+}
+.work-row{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 15px;
+}
+.work-row input{
+    width: 100px;
+}
+.work-row > *{
+    padding: 4px 0;
+}
+.tech-lang h4{
+    padding: 0;
+    margin: 16px 0;
+}
+.ref-row > *{
+    margin: 6px 0;
+}
+.pref-row > *{
+    margin: 4px 0;
+}
+table{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+    padding: 16px 15px;
+    background-color: rgb(247, 136, 0);
+    border-left: 1px solid black;
+    border-bottom: 2px solid black;
+}
+td{
+    font-size: 13px;
+    font-weight: 200;
+    margin: 0;
+    padding: 4px 15px;
+    background-color: bisque;
+    border-left: 1px solid black;
+    border-bottom: 1px dashed black;
+}
+tr:nth-child(even) td{background-color: rgb(247, 174, 86);}
+
+
+
+
+/* Style for the bottom buttons in the form */
+.bottom-buttons{
+    position: absolute;
+    top: 560px;
+    right: 100px;
+}
+.bottom-buttons > *{
+    padding: 12px;
+    background-color: brown;
+    color: bisque;
+    font-size: 14px;
+    font-weight: 800;
+    border: none;
+    border-radius: 8px;
+}

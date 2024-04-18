@@ -1,0 +1,108 @@
+<%# 
+    Developer Name: Lalit Mishra
+    Developer ID:   24DEV018
+    Date:           18-March-2024
+
+    Description:    This file contains UI for Technologies and Language section.
+%>
+
+
+<div class="container">
+    <div class="tech-lang">
+        <div class="lang">
+            
+            <h4>Languages: </h4>
+            
+            <div class="lang-row" id="lang-row-0">
+                <input type="checkbox" name="lang-0" id="handle-21" onclick="activeLangField(0)"> Hindi
+                <br>
+                <div class="flexer">
+                    <div><input type="checkbox" name="hindi-1" id="handle-21-01" disabled> Can read</div>
+                    <div><input type="checkbox" name="hindi-2" id="handle-21-02" disabled> Can write</div>
+                    <div><input type="checkbox" name="hindi-3" id="handle-21-03" disabled> Can speak</div>
+                </div>
+            </div>
+            
+            <div class="lang-row padNorm" id="lang-row-1">
+                <input type="checkbox" name="lang-1" id="handle-22" onclick="activeLangField(1)"> Gujarati
+                <br>
+                <div class="flexer">
+                    <div><input type="checkbox" name="guj-1" id="handle-22-11" disabled> Can read</div>
+                    <div><input type="checkbox" name="guj-2" id="handle-22-12" disabled> Can write</div>
+                    <div><input type="checkbox" name="guj-3" id="handle-22-13" disabled> Can speak</div>
+                </div>
+            </div>
+            
+            <div class="lang-row" id="lang-row-2">
+                <input type="checkbox" name="lang" id="handle-23" onclick="activeLangField(2)"> English
+                <br>
+                <div class="flexer">
+                    <div><input type="checkbox" name="eng-1" id="handle-23-21" disabled> Can read</div>
+                    <div><input type="checkbox" name="eng-2" id="handle-23-22" disabled> Can write</div>
+                    <div><input type="checkbox" name="eng-3" id="handle-23-23" disabled> Can speak</div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="tech">
+            <h4 class="tech-title">Technologies: </h4>
+            
+            <div class="tech-row" id="tech-row-0">
+                <input type="checkbox" name="tech-1" id="handle-24" onclick="activeTechField(0)"> PHP
+                <br>
+                <div class="flexer">
+                    <div><input type="radio" name="php" id="handle-24-01" disabled> Beginner</div>
+                    <div><input type="radio" name="php" id="handle-24-02" disabled> Intermedite</div>
+                    <div><input type="radio" name="php" id="handle-24-03" disabled> Expert</div>
+                </div>
+            </div>
+            
+            <div class="tech-row" id="tech-row-1">
+                <input type="checkbox" name="tech-2" id="handle-25" onclick="activeTechField(1)"> JAVA
+                <br>
+                <div class="flexer">
+                    <div><input type="radio" name="java" id="handle-25-11" disabled> Beginner</div>
+                    <div><input type="radio" name="java" id="handle-25-12" disabled> Intermedite</div>
+                    <div><input type="radio" name="java" id="handle-25-13" disabled> Expert</div>
+                </div>
+            </div>
+            
+            <div class="tech-row" id="tech-row-2">
+                <input type="checkbox" name="tech-3" id="handle-26" onclick="activeTechField(2)"> Python
+                <br>
+                <div class="flexer">
+                    <div><input type="radio" name="python" id="handle-26-21" disabled> Beginner</div>
+                    <div><input type="radio" name="python" id="handle-26-22" disabled> Intermediate</div>
+                    <div><input type="radio" name="python" id="handle-26-23" disabled> Expert</div>
+                </div>
+            </div>
+            
+            <div class="tech-row" id="tech-row-3">
+                <input type="checkbox" name="tech-4" id="handle-27" onclick="activeTechField(3)"> Node.Js
+                <br>
+                <div class="flexer">
+                    <div><input type="radio" name="node" id="handle-27-31" disabled> Beginner</div>
+                    <div><input type="radio" name="node" id="handle-27-32" disabled> Intermediate</div>
+                    <div><input type="radio" name="node" id="handle-27-33" disabled> Expert</div>
+                </div>
+            </div>
+            
+            <div class="tech-row" id="tech-row-4">
+                <input type="checkbox" name="tech-5" id="handle-28" onclick="activeTechField(4)"> Android 
+                <div class="flexer">
+                    <div><input type="radio" name="android" id="handle-28-41" disabled> Beginner</div>
+                    <div><input type="radio" name="android" id="handle-28-42" disabled> Intermediate</div>
+                    <div><input type="radio" name="android" id="handle-28-43" disabled> Expert</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-buttons">
+            <input type="button" value="Back" onclick="hideTechLang(); showWork()">
+            <input type="button" id="saveBasic" value="Preview and Save">
+            <input type="button" id="nextBasic"  style="background-color: #CCC; color: black;" value="Next" onclick="hideTechLang(); showRef()">
+        </div>
+    </div>
+</div>

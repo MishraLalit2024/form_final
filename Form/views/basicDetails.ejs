@@ -1,0 +1,161 @@
+<%# 
+    Developer Name: Lalit Mishra
+    Developer ID:   24DEV018
+    Date:           18-March-2024
+
+    Description:    This file contains basic details section.
+%>
+
+
+<div class="container">
+    <div class="basic" id="basic-class">
+        
+        <h3>Basic Details</h3>
+        
+        <div class="flexer">
+            <div>
+                First Name: 
+            </div>
+            <div>
+                <input autofocus type="text" name="fname" id="handle-1">
+            </div>
+            <div id="message-1" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                Last Name: 
+            </div>
+            <div>
+                <input type="text" name="lname" id="handle-2">
+            </div>
+            <div id="message-2" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                Designation: 
+            </div>
+            <div>
+                <input type="text" name="designation" id="handle-3">
+            </div>
+            <div id="message-3" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                Email ID: 
+            </div>
+            <div>
+                <input type="text" name="email" id="handle-4">
+            </div>
+            <div id="message-4" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                Phone: 
+            </div>
+            <div>
+                <input type="text" name="phone" id="handle-5">
+            </div>
+            <div id="message-5" class="msg"></div>
+        </div>
+        
+        <div  class="flexer">
+            <div>
+                Gender: 
+            </div>
+            <div>
+                <input type="radio" name="gender" id="hidden-gender" value="" hidden checked>
+                <input type="radio" name="gender" id="handle-6-0" value="M"> Male
+                <input type="radio" name="gender" id="handle-6-1" value="F"> Female
+            </div>
+            <div id="message-6" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                Relationship Status: 
+            </div>
+            <div>
+                <select name="relstatus" id="handle-7">
+                    <option value="" disabled selected id="handle-7-0">Select any One</option>
+                    <option value="sin" id="handle-7-1">Single</option>
+                    <option value="mar" id="handle-7-2">Married</option>
+                </select>
+            </div>
+            <div id="message-7" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                Address-1: 
+            </div>
+            <div>
+                <textarea rows="2" cols="24" name="add1" id="handle-8"></textarea>
+            </div>
+            <div id="message-8" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                Address-2: 
+            </div>
+            <div>
+                <textarea rows="2" cols="24" name="add2" id="handle-9"></textarea>
+            </div>
+            <div id="message-9" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                State: 
+            </div>
+            <div>
+                <select name="state" id="handle-10">
+                    <option value="" id="handle-10-0" disabled selected>Select Any State</option>
+                </select>
+            </div>
+            <div id="message-10" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                City: 
+            </div>
+            <div>
+                <select name="city" id="handle-11">
+                    <option value="" id="handle-11-0" disabled selected>Select Any City</option>
+                </select>
+            </div>
+            <div id="message-11" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                PIN Code: 
+            </div>
+            <div>
+                <input type="text" name="pin" id="handle-12">
+            </div>
+            <div id="message-12" class="msg"></div>
+        </div>
+        
+        <div class="flexer">
+            <div>
+                Date Of Birth: 
+            </div>
+            <div>
+                <input type="date" name="dob" id="handle-13">
+            </div>
+            <div id="message-13" class="msg"></div>
+        </div>
+    </div>
+    
+    <div class="bottom-buttons">
+        <input type="button" value="Back" disabled>
+        <input type="button" id="saveBasic" value="Preview and Save">
+        <input type="button" id="nextBasic"  style="background-color: #CCC; color: black;" value="Next" onclick="hideBasic(); showEdu()" disabled>
+    </div>
+</div>

@@ -1,0 +1,78 @@
+<%# 
+    Developer Name: Lalit Mishra
+    Developer ID:   24DEV018
+    Date:           18-March-2024
+
+    Description:    This file contains Preferences section.
+%>
+
+<div class="container">
+    <div class="preference">
+        
+        <h3>Preferences: </h3>
+        
+        <div class="pref-row">
+            <div class="flexer">
+                <div>
+                    <label for="ploc">Locations: </label>
+                </div>
+                <div>
+                    <select name="p-loc" id="handle-32" multiple>
+                        <option value="raj">Rajkot</option>
+                        <option value="sur">Surat</option>
+                        <option value="ahm">Ahmedabad</option>
+                        <option value="vad">Vadodara</option>
+                    </select>
+                </div>
+                <div></div>
+            </div>
+        </div>
+            
+        <div class="pref-row">
+            <div class="flexer">
+                <div>
+                    <label>Expected CTC: </label>
+                </div>
+                <div>
+                    <input type="text" name="expected" id="handle-33">
+                </div>
+                <div></div>
+            </div>
+        </div>
+        
+        <div class="pref-row">
+            <div class="flexer">
+                <div>
+                    <label>Current CTC: </label>
+                </div>
+                <div>
+                    <input type="text" name="current" id="handle-34">
+                </div>
+                <div></div>
+            </div>
+        </div>
+        
+        <div class="pref-row">
+            <div class="flexer">
+                <div>
+                    <label>Department: </label>
+                </div>
+                <div>
+                    <select name="p-desg" id="handle-35">
+                        <option value="des">Design</option>
+                        <option value="dev">Developement</option>
+                        <option value="mar">Marketing</option>
+                    </select>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+        
+    
+        <div class="bottom-buttons">
+            <input type="button" value="Back" onclick="hidePref(); showRef()">
+            <input type="button" id="saveBasic" value="Preview and Save">
+            <input type="button" id="submit"  style="background-color: #CCC; color: black;" value="Submit">
+        </div>
+</div>

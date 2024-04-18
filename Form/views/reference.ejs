@@ -1,0 +1,42 @@
+<%# 
+    Developer Name: Lalit Mishra
+    Developer ID:   24DEV018
+    Date:           18-March-2024
+
+    Description:    This file contains references section.
+%>
+
+<div class="container">
+    <div class="reference">
+        
+        <h3>References: </h3>
+        
+        <div class="ref-control" id="ref-control">
+            <input type="button" value="Add more" onclick="addRefRow()">
+            <input type="button" value="Remove" onclick="remRef()">
+        </div>
+        
+        <div class="ref-row" id="ref-row">
+            <div id="ref-row-0" class="flexer">
+                <div>
+                    <label for="r-name">Name: </label>
+                    <input type="text" name="r-name-0" id="handle-29-0">
+                </div>
+                <div>
+                    <label for="r-phone">Phone: </label>
+                    <input type="text" name="r-phone-0" id="handle-30-0">
+                </div>
+                <div>
+                    <label for="r-rel">Relation: </label>
+                    <input type="text" name="r-rel-0" id="handle-31-0">
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom-buttons">
+            <input type="button" value="Back" onclick="hideRef(); showTechLang()">
+            <input type="button" id="saveBasic" value="Preview and Save">
+            <input type="button" id="nextBasic"  style="background-color: #CCC; color: black;" value="Next" onclick="hideRef(); showPref()">
+        </div>
+    </div>
+</div>

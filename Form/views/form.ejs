@@ -1,0 +1,58 @@
+<%# 
+    Developer Name: Lalit Mishra
+    Developer ID:   24DEV018
+    Date:           18-March-2024
+
+    Description:    This file contains all the sections of the form.
+%>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="loadState()">
+        
+        <header>
+            <p>Employee Registration Form</p>
+        </header>
+        
+        <main>
+            <form action="/postData" id="form">
+                <section id="basic-details">
+                    <%- include('./basicDetails.ejs') %>
+                </section>
+                <section id="education" style="display: none;">
+                    <%- include('./education.ejs') %>
+                </section>
+                <section id="work-exp" style="display: none;">
+                    <%- include('./work-exp.ejs') %>
+                </section>
+                <section id="tech-lang" style="display: none;">
+                    <%- include('./tech-lang.ejs') %>
+                </section>
+                <section id="reference" style="display: none;">
+                    <%- include('./reference.ejs') %>
+                </section>
+                <section id="preference" style="display: none;">
+                    <%- include('./pref.ejs') %>
+                </section>
+            </form>
+        </main>
+
+        <footer>
+            <p>Have a nice Day!</p>
+        </footer>
+        
+        <script src="main.js" type="text/javascript"></script>
+        <script src="basic.js" type="text/javascript"></script>
+        <script src="education.js" type="text/javascript"></script>
+        <script src="work.js" type="text/javascript"></script>
+        <script src="tech-lang.js" type="text/javascript"></script>
+        <script src="ref.js" type="text/javascript"></script>
+        <script src="pref.js" type="text/javascript"></script>
+    </body>
+</html>

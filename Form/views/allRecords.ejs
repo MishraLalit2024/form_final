@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result of SQL Query</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Employee Records</h3>
+    </header>
+
+    <main>
+        <div>            
+            <br>
+            <table cellpadding="0">
+                <thead>
+                    <tr>
+                        <% column.forEach(element => { %>
+                            <th><%= element.name %></th>
+                        <% }); %>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for( let i = 0; i < data.length; i++ ) { %>
+                        <tr>
+                            <% var val = Object.values(data[i]); %>
+                            <% val.forEach( (ele) => { %>
+                                <td>
+                                    <%= ele %>
+                                </td>
+                            <% }); %>
+                            <td>    
+                                <input type="button" value="Update">
+                            </td>
+                        </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Thank you for visiting.</p>
+    </footer>
+</body>
+
+</html>
