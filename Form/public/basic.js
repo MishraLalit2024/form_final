@@ -181,17 +181,42 @@ document.getElementById("saveBasic").addEventListener("click", (e) => {
         flag = false;
         document.getElementById("message-12").innerText = "Not a Valid PIN Code"
     }
+    let genderFlag = false;
+    const gender = document.getElementsByName("gender");
+    gender.forEach(el => {
+        if (el.checked){
+            genderFlag = true;
+        }
+    })
+    if(genderFlag===false){
+        document.getElementById("message-6").innerText = "Gender cannot be empty"
+    }
+    else{
+        document.getElementById("message-6").innerText = ""
+    }
 
-
+    flag = genderFlag;
 
     console.log(flag);
 
     if (flag == true) {
         document.getElementById("nextBasic").removeAttribute("disabled", "true");
+        let parent = document.getElementById("basic-class");
+        let input = parent.querySelectorAll("input");
+        let text = parent.querySelectorAll("textarea");
+        let select = parent.querySelectorAll("select");
+        input.forEach(x => {
+            x.disabled = !x.disabled;
+        })
+        text.forEach(el => {
+            el.disabled = !el.disabled;
+        })
+        select.forEach(el =>{
+            el.disabled = !el.disabled;
+        })
         document.getElementById("nextBasic").style.backgroundColor = 'green';
     }
-    else{
+    else {
         document.getElementById("nextBasic").setAttribute("disabled", "true");
-        document.getElementById("nextBasic").style.backgroundColor = 'grey';
     }
 })
