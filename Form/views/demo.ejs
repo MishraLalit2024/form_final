@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <p><%= data.fname %></p>
+  <div class="edu-card">
+    <div class="edu-card-controls">
+      <div>
+        <input type="button" value="Close">
+      </div>
+    </div>
+    <div class="flexer">
+      <div>
+        <label for="Course">Course: </label>
+      </div>
+      <div>
+        <select name="course-0" id="handle-14-0" onchange="activeField(0)">
+          <option value="ssc">SSC</option>
+          <option value="hsc">HSC</option>
+          <option value="dip">Diploma</option>
+          <option value="bac">Bachelor</option>
+          <option value="mas">Master</option>
+          <option value="doc">Doctorate</option>
+        </select>
+      </div>
+      <div id="handle-14-0-msg">&nbsp;</div>
+    </div>
+    <div class="flexer">
+      <div>
+        <label for="passing-year">Passing Year: </label>
+      </div>
+      <div>
+        <input class="edu-spy" type="text" name="pyear-0" id="handle-15-0" placeholder="Passing Year" />
+      </div>
+      <div id="handle-15-0-msg">&nbsp;</div>
+    </div>
+    <div class="flexer">
+      <div>
+        <label for="Score">Score: </label>
+      </div>
+      <div>
+        <input class="edu-spy" type="text" name="score-0" id="handle-16-0" placeholder="Score" />
+      </div>
+      <div id="handle-16-0">&nbsp;</div>
+    </div>
+    <div class="edu-card-controls">
+      <div>
+        <input type="button" value="Add">
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

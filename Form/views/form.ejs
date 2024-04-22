@@ -22,8 +22,10 @@
         
         <main>
             <form action="/postData" id="form">
-                
-                <section id="education">
+                <section id="basic-details">
+                    <%- include('./basicDetails.ejs') %>
+                </section>
+                <section id="education" style="display: none;">
                     <%- include('./education.ejs') %>
                 </section>
                 <section id="work-exp" style="display: none;">

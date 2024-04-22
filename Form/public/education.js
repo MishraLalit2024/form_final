@@ -25,7 +25,7 @@ function addEduRow() {
         str = `<div id="edu-row-${rowCount}" class="flexer">
         <div>
           Course:
-          <select name="course-${rowCount}" id="handle-14-${rowCount}" onchange="activeField(${rowCount})">
+          <select name="course-${rowCount}" id="handle-14-${rowCount}">
             <option value="ssc">SSC</option>
             <option value="hsc">HSC</option>
             <option value="dip">Diploma</option>
@@ -51,7 +51,7 @@ function addEduRow() {
           />
           </div>
           <div class="edu-inputs">
-          <input type="button" value="Remove" onclick="remEdu(${rowCount})" />
+          <input type="button" id="rem-edu-${rowCount}" value="Remove" onclick="remEdu(${rowCount})" />
         </div>`
         document.getElementById('edu-row').innerHTML += str;
         rowCount++;
@@ -63,16 +63,39 @@ function remEdu(data) {
     if (rowCount > 1) {   //to stop user from deleting all the rows
         parent = document.getElementById(`edu-row-${data}`);
         parent.remove();
-        rowCount--;
     }
     else {
         return;
     }
 }
 
+let flag = false;
+function saveEdu(){
+  let parent = document.getElementById('edu-row').children;
+  for (let i = 0; i < parent.length; i++) {
+    let course = document.getElementById(`handle-14-${i}`).value;
+    let pyear = document.getElementById(`handle-15-${i}`).value;
+    let score = document.getElementById(`handle-16-${i}`).value;
+    if(course == '' || pyear == '' || score == ''){
+      alert('Cannot leave any field empty if anyone field is filled.');
+      flag = false;
+      document.getElementById(`handle-15-${i}`).focus();
+      console.log(flag);
+    }
+    else{
+      flag = true;
+      console.log(flag);
+    }
+  }
 
-//to active all the fields on change of option:
-function activeField(num) {
-    document.getElementById(`handle-15-${num}`).removeAttribute("disabled", "true");
-    document.getElementById(`handle-16-${num}`).removeAttribute("disabled", "true");
+  
+  if(flag == true){
+    for (let i = 0; i < parent.length; i++) {
+      document.getElementById(`handle-14-${i}`).setAttribute('disabled', true);
+      document.getElementById(`handle-15-${i}`).setAttribute('disabled', true);
+      document.getElementById(`handle-16-${i}`).setAttribute('disabled', true);
+      document.getElementById(`rem-edu-${i}`).setAttribute('disabled', true)
+    }
+    document.getElementById('nextEdu').removeAttribute('disabled', 'true');
+  }
 }

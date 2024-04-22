@@ -27,12 +27,6 @@ router.get('/getData', selectQuery);
 
 router.post('/postData', sqlMaker);
 
-// router.get('/demo', (req, res)=>{
-//     var data = req.body;
-//     console.log("Cleared sqlMaker: "+req.body.fname);
-//     res.render('demo', {data:data});
-// })
-
 
 //default route:
 router.get('*', hr);
