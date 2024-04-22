@@ -1,42 +1,59 @@
-<%# 
-    Developer Name: Lalit Mishra
-    Developer ID:   24DEV018
-    Date:           18-March-2024
-
-    Description:    This file contains education section.
-%>
+<%# Developer Name: Lalit Mishra Developer ID: 24DEV018 Date: 18-March-2024
+Description: This file contains education section. %>
 
 <div class="container">
-    <div class="education">
-        
-        <h3>Education: </h3>
-        
-        <div class="edu-control" id="edu-control">
-            <input type="button" value="Add more" onclick="addEduRow()">
-            <input type="button" value="Remove" onclick="remEdu()">
-        </div>
-        
-        <div class="edu-row" id="edu-row">
-            <div id="edu-row-0" class="flexer">
-                Course: <select name="course-0" id="handle-14-0" onchange="activeField(0)">
-                    <option value="ssc" selected>SSC</option>
-                    <option value="hsc">HSC</option>
-                    <option value="dip">Diploma</option>
-                    <option value="bac">Bachelor</option>
-                    <option value="mas">Master</option>
-                    <option value="doc">Doctorate</option>
-                </select>                
-                <label for="pYear">Passing Year: </label>
-                <input type="text" name="pyear-0" id="handle-15-0" disabled>
-                <label for="score">Percentage: </label>
-                <input type="text" name="score-0" id="handle-16-0" disabled>
-            </div>
-        </div>
-        
-        <div class="bottom-buttons">
-            <input type="button" value="Back" onclick="hideEdu(); showBasic()">
-            <input type="button" id="saveBasic" value="Preview and Save">
-            <input type="button" id="nextBasic"  style="background-color: #CCC; color: black;" value="Next" onclick="hideEdu(); showWork()">
-        </div>
+  <div class="education">
+    <h3>Education:</h3>
+
+    <div class="edu-control" id="edu-control">
+      <input type="button" value="Add more" onclick="addEduRow()" />
     </div>
+
+    <div class="edu-row" id="edu-row">
+      <div id="edu-row-0" class="flexer">
+        <div>
+          Course:
+          <select name="course-0" id="handle-14-0" onchange="activeField(0)">
+            <option value="ssc" selected>SSC</option>
+            <option value="hsc" disabled>HSC</option>
+            <option value="dip" disabled>Diploma</option>
+            <option value="bac" disabled>Bachelor</option>
+            <option value="mas" disabled>Master</option>
+            <option value="doc" disabled>Doctorate</option>
+          </select>
+        </div>
+        <div class="flexer">
+          <input
+          class="edu-spy"
+            type="text"
+            name="pyear-0"
+            id="handle-15-0"
+            placeholder="Passing Year"
+          />
+          <input
+          class="edu-spy"
+            type="text"
+            name="score-0"
+            id="handle-16-0"
+            placeholder="Score"
+          />
+          </div>
+          <div class="edu-inputs">
+          <input type="button" value="Remove" onclick="remEdu()" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-buttons">
+      <input type="button" value="Back" onclick="hideEdu(); showBasic()" />
+      <input type="button" id="saveBasic" value="Preview and Save" />
+      <input
+        type="button"
+        id="nextBasic"
+        style="background-color: #ccc; color: black"
+        value="Next"
+        onclick="hideEdu(); showWork()"
+      />
+    </div>
+  </div>
 </div>

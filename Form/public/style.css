@@ -77,6 +77,14 @@ textarea{
 .edu-row > *{
     padding: 4px 0;
 }
+.edu-inputs{
+    display: flex;
+    flex-direction: row-reverse;    
+    justify-content: space-between;
+}
+.edu-spy{
+    width: 98%;
+}
 .work-row{
     width: 100%;
     margin: 0 auto;
